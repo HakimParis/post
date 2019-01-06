@@ -1,0 +1,44 @@
+$font-size-base: 16px;
+$font-size-title: 18px;
+$font-size-date: 12px;
+
+.post {
+  display: block;
+  font-size: $font-size-base;
+  text-align: left;
+
+  .header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(#{$font-size-title} + 10px);
+
+    .title {
+      float: left;
+      display: block;
+      font-size: $font-size-title;
+    }
+
+    .date {
+      float: right;
+      display: block;
+      font-size: $font-size-date;
+      color: gray;
+      font-style: italic;
+    }
+  }
+
+  .content {
+    display: block;
+    text-align: left;
+    clear: both;
+  }
+
+  .actions {
+    display: block;
+
+    button:nth-child(1n) {
+      margin-right: 5px;
+    }
+  }
+}
