@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import Post from '../types/Post'
+import Post from '../types/Post';
 
 @Component({
   selector: 'app-post-list',
@@ -15,13 +15,5 @@ export class PostListComponent implements OnInit {
    }
 
   ngOnInit() {
-  }
-
-  like() {
-    this.post.loveIts++
-  }
-
-  dislike() {
-    this.post.loveIts--
   }
 }
